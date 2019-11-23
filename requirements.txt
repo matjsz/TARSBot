@@ -5,3 +5,5 @@ async-timeout==3.0.1
 youtube_dl==2019.11.22
 ffmpeg==1.4
 ffprobe==0.5
+ffprobe3==0.1.2
+python-ffmpeg==1.0.8

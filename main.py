@@ -180,7 +180,7 @@ async def helphere(ctx):
 		colour = discord.Colour.blue()
 		)
 
-	embedhere.set_author(name='**help** Solicitado por {}'.format(autor))
+	embedhere.set_author(name='help - Solicitado por {}'.format(autor))
 	embedhere.add_field(name='!ver', value='Checa a versão do Tars', inline=False)
 	embedhere.add_field(name='!clearchat (ADMIN)', value='Limpa o chat', inline=False)
 	embedhere.add_field(name='!kick (ADMIN)', value='Kicka um usuário - uso: !kick [@usuário] [motivo]', inline=False)
