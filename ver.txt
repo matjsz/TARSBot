@@ -27,6 +27,7 @@ c5a0735-9.7.13 - 23/11/2019 - Correção de bugs
 9.8.14 - 23/11/2019 - Correção de bugs
 9.8.15 - 23/11/2019 - Correção de bugs
 9.8.16 - 23/11/2019 - Correção de bugs
+9.8.17 - 23/11/2019 - Correção de bugs
 
 
 
