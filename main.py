@@ -34,7 +34,7 @@ async def on_member_join(member):
 	embed.set_footer(text="{}".format(member.guild), icon_url="{}".format(member.guild.icon_url))
 	embed.timestamp = datetime.datetime.utcnow()
 
-	wchannel = await bot.get_channel(id=599608582740115456)
+	wchannel = bot.get_channel(id=599608582740115456)
 	await wchannel.send(embed=embed)
 
 @bot.command(pass_content=True)
