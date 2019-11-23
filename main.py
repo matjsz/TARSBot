@@ -27,7 +27,7 @@ async def on_command_error(ctx, error):
 @bot.event
 async def on_member_join(member):
 	embed = discord.Embed(colour=0x95efcc,
-		description="Bem vindo ao servidor! Membro nº**{}**".format(server, len(list(member.guild.members))))
+		description="Bem vindo ao servidor! Membro nº**{}**".format(len(list(member.guild.members))))
 
 	embed.set_thumbnail(url='{}'.format(member.avatar_url))
 	embed.set_author(name="{}".format(member.name), icon_url='{}'.format(member.avatar_url))

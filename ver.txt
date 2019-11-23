@@ -25,6 +25,7 @@ a51351c-8.7.11 - 23/11/2019 - Correção de bugs
 68bc3d8-9.7.12 - 23/11/2019 - Correção de bugs, nova função: mensagem de boas vindas
 c5a0735-9.7.13 - 23/11/2019 - Correção de bugs
 9.8.14 - 23/11/2019 - Correção de bugs
+9.8.14 - 23/11/2019 - Correção de bugs
 
 
 
