@@ -14,6 +14,8 @@ TARS updates:
 7.3.5 - 22/11/2019 - O Tars foi adicionado á um servidor em rede global, ou seja, está aberto para o uso geral! :)
 7.4.5 - 22/11/2019 - Bugs! (!helpcmds)
 8.4.6 - 23/11/2019 - Novo commit e push - reparo do bug no comando !helpcmds
-8.4.7 - 23/11/2019 - Reparo de bugs (!helphere) 
+8.4.7 - 23/11/2019 - Reparo de bugs (!helphere)
+8.4.8 - 23/11/2019 - Reparo de bugs gerais
+8.5.8 - 23/11/2019 - Implementação do comando !helpcmds: [channel]
 
 

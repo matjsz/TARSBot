@@ -153,7 +153,7 @@ async def ban(ctx, member : discord.Member, *, reason=None, time='**Permanente**
 	await member.kick(reason=reason)
 
 @bot.command()
-async def helpcmds(ctx):
+async def helpcmds(ctx, where=None):
 	autor = ctx.message.author
 
 	embed = discord.Embed(
@@ -168,13 +168,6 @@ async def helpcmds(ctx):
 	embed.add_field(name='!playms', value='Toca uma música de uma URL - uso !playms [url]', inline=False)
 	embed.add_field(name='!stopms', value='Para de reproduzir uma música', inline=False)
 
-	await autor.send('Olá {}! Aqui estão alguns comandos! :)'.format(autor))
-	await autor.send(embed=embed)
-
-@bot.command()
-async def helphere(ctx):
-	autor = ctx.message.author
-
 	embedhere = discord.Embed(
 		title='Comandos do Tars',
 		colour = discord.Colour.blue()
@@ -188,6 +181,13 @@ async def helphere(ctx):
 	embedhere.add_field(name='!playms', value='Toca uma música de uma URL - uso !playms [url]', inline=False)
 	embedhere.add_field(name='!stopms', value='Para de reproduzir uma música', inline=False)
 
-	await ctx.send(embed=embedhere)
+	if where == None:
+		await ctx.send(embed=embedhere)
+	elif where == "me":
+		await autor.send('Olá {}! Aqui estão alguns comandos! :)'.format(autor))
+		await autor.send(embed=embed)
+	else:
+		await ctx.send(embed=embedhere)
+
 
 bot.run('NjA1MDg5NjExODc3ODQyOTU0.XdWEhQ.6RKMh9A6r2HM6eGNJO6gq7yo-Dw')
