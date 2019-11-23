@@ -1,0 +1,15 @@
+TARS updates:
+
+0.0.0 -  20/11/2019 - No desc
+1.0.0 - 20/11/2019 -  Código revisado - troca de client por bot
+1.0.1 - 20/11/2019 - Correção de bugs da última atualização
+1.1.2 - 20/11/2019 - Adição do comando !clearchat - bugs
+2.1.2 - 21/11/2019 - Correção de bugs do comando !clearchat
+2.1.2 - 21/11/2019 - Adição dos comandos !kick e !ban
+2.2.2 - 21/11/2019 - Atualização dos comandos !kick e !ban para .format()
+3.2.3 - 22/11/2019 - Adição de estilo para os comandos !kick e !ban
+4.2.4 - 22/11/2019 - Adição do comando !help (incluso: estilo, e correção de bugs)
+5.2.4 - 22/11/2019 - Atualização dos comandos !kick e !ban (dm message)
+6.3.5 - 22/11/2019 - Adição dos comandos !playms e !stopms, correção de bugs e atualização do comando !helpcmds
+
+
