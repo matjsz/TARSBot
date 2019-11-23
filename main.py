@@ -78,12 +78,6 @@ async def stopms(ctx):
 	await voice_client.disconnect()
 
 @bot.command()
-async def shutdown(ctx):
-	await ctx.send(":octagonal_sign: **Finalizando**...")
-	time.sleep(1)
-	await bot.logout()
-
-@bot.command()
 async def ver(ctx):
 	await ctx.send(messages.vermsg)
 
@@ -171,11 +165,30 @@ async def helpcmds(ctx):
 	embed.add_field(name='!clearchat (ADMIN)', value='Limpa o chat', inline=False)
 	embed.add_field(name='!kick (ADMIN)', value='Kicka um usuário - uso: !kick [@usuário] [motivo]', inline=False)
 	embed.add_field(name='!ban (ADMIN)', value='Bane um usuário - uso: !ban [@usuário] [motivo]', inline=False)
-	embed.add_field(name="---", value='')
-	embed.add_field(name='!playms', value='Toca uma música de uma URL - uso !playms [url]')
-	embed.add_field(name='!stopms', value='Para de reproduzir uma música')
+	embed.add_field(name='!playms', value='Toca uma música de uma URL - uso !playms [url]', inline=False)
+	embed.add_field(name='!stopms', value='Para de reproduzir uma música', inline=False)
 
 	await autor.send('Olá {}! Aqui estão alguns comandos! :)'.format(autor))
 	await autor.send(embed=embed)
+
+@bot.command()
+async def helphere(ctx):
+	selfchannel = ctx.message.author.channel
+	autor = ctx.message.author
+
+	embedhere = discord.Embed(
+		title='Comandos do Tars',
+		colour = discord.Colour.blue()
+		)
+
+	embedhere.set_author(name='**help** Solicitado por {}'.format(autor))
+	embedhere.add_field(name='!ver', value='Checa a versão do Tars', inline=False)
+	embedhere.add_field(name='!clearchat (ADMIN)', value='Limpa o chat', inline=False)
+	embedhere.add_field(name='!kick (ADMIN)', value='Kicka um usuário - uso: !kick [@usuário] [motivo]', inline=False)
+	embedhere.add_field(name='!ban (ADMIN)', value='Bane um usuário - uso: !ban [@usuário] [motivo]', inline=False)
+	embedhere.add_field(name='!playms', value='Toca uma música de uma URL - uso !playms [url]', inline=False)
+	embedhere.add_field(name='!stopms', value='Para de reproduzir uma música', inline=False)
+
+	await ctx.send(embed=embedhere)
 
 bot.run('NjA1MDg5NjExODc3ODQyOTU0.XdWEhQ.6RKMh9A6r2HM6eGNJO6gq7yo-Dw')

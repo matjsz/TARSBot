@@ -11,5 +11,8 @@ TARS updates:
 4.2.4 - 22/11/2019 - Adição do comando !help (incluso: estilo, e correção de bugs)
 5.2.4 - 22/11/2019 - Atualização dos comandos !kick e !ban (dm message)
 6.3.5 - 22/11/2019 - Adição dos comandos !playms e !stopms, correção de bugs e atualização do comando !helpcmds
+7.3.5 - 22/11/2019 - O Tars foi adicionado á um servidor em rede global, ou seja, está aberto para o uso geral! :)
+7.4.5 - 22/11/2019 - Bugs! (!helpcmds)
+
 
 
