@@ -25,8 +25,8 @@ async def on_command_error(ctx, error):
 		await ctx.send("**[ERRO]** - Comando não encontrado")
 
 @bot.event
-async def on_member_join(ctx, member):
-	server=ctx.message.guild
+async def on_member_join(member):
+	server=message.guild
 	embed = discord.Embed(colour=0x95efcc,
 		description="Bem vindo ao servidor {}! Membro nº**{}**".format(server, len(list(member.guild.members))))
 
