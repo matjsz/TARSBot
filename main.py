@@ -16,6 +16,7 @@ bot = commands.Bot(command_prefix='!')
 async def on_ready():
     print('[ OK ] Logado como {0.user}!'.format(bot))
     status = "[ OK ]"
+    await client.change_presence(status=discord.Status.idle, activity=discord.Game("ajuda -> !helpcmds"))
 
 @bot.command(pass_content=True)
 async def playms(ctx, url):
