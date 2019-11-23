@@ -23,7 +23,8 @@ TARS updates:
 315bed9-8.7.10 - 23/11/2019 - Adição do status do BOT
 a51351c-8.7.11 - 23/11/2019 - Correção de bugs
 68bc3d8-9.7.12 - 23/11/2019 - Correção de bugs, nova função: mensagem de boas vindas
-9.7.13 - 23/11/2019 - Correção de bugs
+c5a0735-9.7.13 - 23/11/2019 - Correção de bugs
+
 
 
 
