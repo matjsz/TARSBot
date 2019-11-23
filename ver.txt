@@ -24,11 +24,11 @@ TARS updates:
 a51351c-8.7.11 - 23/11/2019 - Correção de bugs
 68bc3d8-9.7.12 - 23/11/2019 - Correção de bugs, nova função: mensagem de boas vindas
 c5a0735-9.7.13 - 23/11/2019 - Correção de bugs
-9.8.14 - 23/11/2019 - Correção de bugs
-9.8.15 - 23/11/2019 - Correção de bugs
-9.8.16 - 23/11/2019 - Correção de bugs
-9.8.17 - 23/11/2019 - Correção de bugs
-
-
+3dfe6b5-9.8.14 - 23/11/2019 - Correção de bugs
+c0b5ab1-9.8.15 - 23/11/2019 - Correção de bugs
+3f8aae5-9.8.16 - 23/11/2019 - Correção de bugs
+ff93a18-9.8.17 - 23/11/2019 - Correção de bugs
+e24ebb2-10.8.17 - 23/11/2019 - Integração com GitHub
+11.8.12 - 23/11/2019 - Tentativa de reparo do bug de reconhecimento do token
 
 

@@ -210,4 +210,4 @@ async def helpcmds(ctx, where=None):
 		await ctx.send(embed=embedhere)
 
 
-bot.run('NjA1MDg5NjExODc3ODQyOTU0.XdWEhQ.6RKMh9A6r2HM6eGNJO6gq7yo-Dw')
+bot.run('NjA1MDg5NjExODc3ODQyOTU0.XdlNRg.E9tpaj0pJm2fPkRDEwIIFo8jKNI')
