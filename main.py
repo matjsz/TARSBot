@@ -173,7 +173,6 @@ async def helpcmds(ctx):
 
 @bot.command()
 async def helphere(ctx):
-	selfchannel = ctx.message.author.channel
 	autor = ctx.message.author
 
 	embedhere = discord.Embed(

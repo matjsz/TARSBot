@@ -13,6 +13,6 @@ TARS updates:
 6.3.5 - 22/11/2019 - Adição dos comandos !playms e !stopms, correção de bugs e atualização do comando !helpcmds
 7.3.5 - 22/11/2019 - O Tars foi adicionado á um servidor em rede global, ou seja, está aberto para o uso geral! :)
 7.4.5 - 22/11/2019 - Bugs! (!helpcmds)
-
+8.4.6 - 23/11/2019 - Novo commit e push - reparo do bug no comando !helpcmds 
 
 
