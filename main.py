@@ -2,13 +2,14 @@ import discord
 import messages
 import os
 import youtube_dl
-from discord.ext import commands
 import time
+import datetime
+
+from discord.ext import commands
 from discord import Webhook, AsyncWebhookAdapter
 from discord import FFmpegPCMAudio
 from discord.utils import get
 from discord import *
-import youtube_dl
 
 bot = commands.Bot(command_prefix='!')
 
@@ -17,6 +18,25 @@ async def on_ready():
     print('[ OK ] Logado como {0.user}!'.format(bot))
     status = "[ OK ]"
     await bot.change_presence(status=discord.Status.idle, activity=discord.Game("ajuda -> !helpcmds"))
+
+@bot.event
+async def on_command_error(ctx, error):
+	if isinstance(error, commands.CommandNotFound):
+		await ctx.send("**[ERRO]** - Comando não encontrado")
+
+@bot.event
+async def on_member_join(member):
+	server=ctx.message.guild
+	embed = discord.Embed(colour=0x95efcc,
+		description="Bem vindo ao servidor {}! Membro nº**{}**".format(server, len(list(member.guild.members))))
+
+	embed.set_thumbnail(url='{}'.format(member.avatar_url))
+	embed.set_author(name="{}".format(member.name), icon_url='{}'.format(member.avatar_url))
+	embed.set_footer(text="{}".format(member.guild), icon_url="{}".format(member.guild.icon_url))
+	embed.timestamp = datetime.datetime.utcnow()
+
+	wchannel = await bot.get_channel(id=599608582740115456)
+	await wchannel.send(embed=embed)
 
 @bot.command(pass_content=True)
 async def playms(ctx, url):
@@ -83,7 +103,7 @@ async def ver(ctx):
 	await ctx.send(messages.vermsg)
 
 @bot.command(pass_content=True)
-async def clearchat(ctx, amount=50):
+async def clearchat(ctx, amount : int):
 	msgchannel = ctx.message.channel
 	await ctx.send(":wrench: **Limpando**...")
 	time.sleep(1)
@@ -163,7 +183,7 @@ async def helpcmds(ctx, where=None):
 
 	embed.set_author(name='Comandos do Tars')
 	embed.add_field(name='!ver', value='Checa a versão do Tars', inline=False)
-	embed.add_field(name='!clearchat (ADMIN)', value='Limpa o chat', inline=False)
+	embed.add_field(name='!clearchat (ADMIN)', value='Limpa o chat - uso: !clearchat [quantidade de mensagens]', inline=False)
 	embed.add_field(name='!kick (ADMIN)', value='Kicka um usuário - uso: !kick [@usuário] [motivo]', inline=False)
 	embed.add_field(name='!ban (ADMIN)', value='Bane um usuário - uso: !ban [@usuário] [motivo]', inline=False)
 	embed.add_field(name='!playms', value='Toca uma música de uma URL - uso !playms [url]', inline=False)

@@ -20,7 +20,8 @@ TARS updates:
 8.6.9 - 23/11/2019 - Correção de bugs, reparo de POO da variável "msgchannel" no comando !clearchat
 8.6.10 - 23/11/2019 - Correção de bugs
 315bed9-8.7.10 - 23/11/2019 - Adição do status do BOT
-8.7.11 - Correção de bugs
+a51351c-8.7.11 - Correção de bugs
+9.7.12 - Correção de bugs, nova função: mensagem de boas vindas
 
 
 
