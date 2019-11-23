@@ -17,5 +17,7 @@ TARS updates:
 8.4.7 - 23/11/2019 - Reparo de bugs (!helphere)
 8.4.8 - 23/11/2019 - Reparo de bugs gerais
 8.5.8 - 23/11/2019 - Implementação do comando !helpcmds: [channel]
+8.6.9 - 23/11/2019 - Correção de bugs, reparo de POO da variável "msgchannel" no comando !clearchat
+
 
 

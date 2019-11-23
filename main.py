@@ -83,10 +83,10 @@ async def ver(ctx):
 
 @bot.command(pass_content=True)
 async def clearchat(ctx, amount=50):
-	channel = bot.get_channel(612287992182210561)
+	msgchannel = ctx.message.channel
 	await ctx.send(":wrench: **Limpando**...")
 	time.sleep(1)
-	await ctx.channel.purge(limit = amount)
+	await ctx.msgchannel.purge(limit = amount)
 	time.sleep(1)
 	await ctx.send("**Pronto!** :)")
 
